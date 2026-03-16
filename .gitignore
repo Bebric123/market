@@ -1,0 +1,91 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+.env
+virtualenv/
+pip-log.txt
+pip-delete-this-directory.txt
+.python-version
+.pyc
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+*.pot
+*.pyc
+__pycache__/
+.env
+.DS_Store
+
+# Медиа файлы (пользовательский контент)
+/media/
+/media/*
+!/media/.gitkeep
+
+# Статические файлы (собранные)
+/staticfiles/
+/static/
+
+# БД
+*.sqlite3
+*.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Тесты
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+# Временные файлы
+*.bak
+*.tmp
+*.temp
+
+# Логи
+logs/
+*.log
+
+# Докер
+.dockerignore
+docker-compose.override.yml
+
+# Секреты
+.secrets/
+config/settings/local.py
+config/settings/override.py
+
+# Вендоры
+node_modules/
+bower_components/
+
+# Архивы
+*.zip
+*.tar.gz
+*.rar
+
+# Примечание: папка media исключена, но если нужно сохранить
+# структуру папок в репозитории, создайте в media пустой файл .gitkeep
