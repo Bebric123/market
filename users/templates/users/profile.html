@@ -49,6 +49,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a href="{% url 'users:order_history' %}" 
+                               hx-get="{% url 'users:order_history' %}" 
+                               hx-target="#profile-main-content" 
+                               hx-push-url="true"
+                               class="flex items-center text-gray-700 font-semibold text-sm tracking-wide hover:text-gray-900 {% if request.resolver_match.url_name == 'order_history' %}text-gray-900 border-l-4 border-gray-500 pl-2{% endif %}">
+                                ORDER HISTORY
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a href="{% url 'users:logout' %}" 
@@ -125,6 +132,14 @@
                             </button>
                         </div>
                     </div>
+                </div>
+                
+                <!-- Order History -->
+                <div class="mt-8">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4 tracking-wide">
+                        ORDER HISTORY
+                    </h2>
+                    {% include 'users/partials/order_history.html' %}
                 </div>
                 
                 <!-- Recommendations -->
